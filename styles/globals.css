@@ -52,6 +52,11 @@ code {
   width: 100%;
   font-size: .9rem;
   text-align: center;
-  background-color: rgb(198, 218, 218);
+  background-color: rgb(142, 203, 203);
   margin-top: 1px;
+}
+
+.blog {
+  line-height: 1.5rem;
+  margin-bottom: 2.5rem;
 }
