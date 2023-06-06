@@ -20,7 +20,7 @@ export function InterestForm() {
         setInstrument(e.target.value)
     }
 
-    function handleSubmit() {
+    function handleSubmit(e) {
         axios.post('/api/mail', {
             first_name: first,
             last_name: last,
@@ -33,16 +33,17 @@ export function InterestForm() {
             .catch((err) => {
                 if (err) console.error(err.message)
             })
+        
     }
 
     return(
         <div>
-            <form>
-                <input type="text" name="first_name" placeholder="First Name" required onChange={handleFirst}></input> <br />
-                <input type="text" name="last_name" placeholder="Last Name" required onChange={handleLast}></input> <br />
+            <form onSubmit={handleSubmit}>
+                <input type="text" name="first_name" placeholder="First Name" required onChange={handleFirst} pattern="[A-Za-z]{}" title="No special characters"></input> <br />
+                <input type="text" name="last_name" placeholder="Last Name" required onChange={handleLast} pattern="[A-Za-z]{.}"></input> <br />
                 <input type="email" name="email" placeholder="Email" required onChange={handleEmail}></input> <br />
-                <input type="text" name="instrument" placeholder="Instrument" required onChange={handleInstrument}></input> <br />
-                <button onClick={handleSubmit}>Submit</button>
+                <input type="text" name="instrument" placeholder="Instrument" required onChange={handleInstrument} pattern="[A-Za-z]{.}"></input> <br />
+                <input type='submit'></input>
             </form>
         </div>
     )
