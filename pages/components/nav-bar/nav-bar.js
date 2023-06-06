@@ -8,7 +8,7 @@ export function NavBar() {
             <Link href={'/pages/blog'} className="btn col-sm navlink">Blog</Link>
             <Link href={'/pages/wordle'} className="btn col-sm navlink">Wordle Clone</Link>
             <Link href={'/pages/writing'} className="btn col-sm navlink">Writing Samples</Link>
-            <Link href={'/music'} className="btn col-sm navlink">Music (under construction)</Link>
+            <Link href={'/pages/music'} className="btn col-sm navlink">Music (under construction)</Link>
         </div>
     )
 }
