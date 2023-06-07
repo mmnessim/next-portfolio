@@ -39,10 +39,14 @@ export function InterestForm() {
     return(
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="first_name" placeholder="First Name" required onChange={handleFirst} pattern="[A-Za-z]{}" title="No special characters"></input> <br />
-                <input type="text" name="last_name" placeholder="Last Name" required onChange={handleLast} pattern="[A-Za-z]{.}"></input> <br />
+                <label for="First_name">First Name:  </label>
+                <input type="text" name="first_name" placeholder="First Name" required onChange={handleFirst} pattern="[A-Za-z]+" title="No special characters"></input> <br />
+                <label for="last_name">Last Name:  </label>
+                <input type="text" name="last_name" placeholder="Last Name" required onChange={handleLast} pattern="[A-Za-z]+" title="No special characters"></input> <br />
+                <label for="email">E-mail Address:  </label>
                 <input type="email" name="email" placeholder="Email" required onChange={handleEmail}></input> <br />
-                <input type="text" name="instrument" placeholder="Instrument" required onChange={handleInstrument} pattern="[A-Za-z]{.}"></input> <br />
+                <label for="instrument">Instrument:  </label>
+                <input type="text" name="instrument" placeholder="Instrument" required onChange={handleInstrument} pattern="[A-Za-z]+" title="No special characters"></input> <br />
                 <input type='submit'></input>
             </form>
         </div>
