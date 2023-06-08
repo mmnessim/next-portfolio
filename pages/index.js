@@ -14,7 +14,7 @@ export default function Home() {
           <div className="container">
               <h3>Web Development Portfolio and Demo</h3>
               <h1>Needs to be updated</h1>
-              <p>This site is a sample of my work in Web Development. I employ standard HTML, CSS, and JavaScript, in conjunction with Bootstrap and React for the frontend. For the backend, I used Express.js and PostgreSQL. The frontend is deployed with Netlify, and the backend is deployed with Heroku.</p>
+              <p>This site is a sample of my work in Web Development, written using Next.js.</p>
               <p>
                   All code can be found on my github at these repositories:
               </p> 
